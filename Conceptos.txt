@@ -5,4 +5,6 @@
 -Es Multihilo, es decir, Puede trabajar en paralelo.
 
 -Java fue creado en 1991 por James Gosling
+-Hatsa el 2009 Java fue propiedad de SunMicroSystems
+-En 2009 Oracle compró Java.
 
