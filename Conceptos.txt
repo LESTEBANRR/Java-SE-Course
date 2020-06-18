@@ -21,3 +21,11 @@
 -dar click en configurar variables del entorno.
 -Dar en Editar.
 -Dar en Nuevo y pegar la ruta del JDK (C:\Program Files\Java\jdk-14.0.1\bin)
+
+°Tipos de Datos Primitivos
+	°Enteros
+	byte: -128 a 127 - 1 byte
+	short: -32768 a 32767 - 2 bytes
+	int: -2147483648 a 2147483648 -4 bytes
+	long: 8 bytes
+
