@@ -38,4 +38,4 @@
 
 -Las variables constantes se escriben en mayusculas
 -Los nombres de las clase siempre empiezan con minusculas
-
+-Para hacer Cast (Convertir de una variable a otra) se usa la siguiente sintaxis #tipoNuevo #nombreNuevo = (#tipoNuevo) #variableAconvertir ;
