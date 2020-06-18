@@ -10,5 +10,15 @@ public class HolaMundo {
 		int id_user = 1001;
 		long id_twiteer=11234567891234567L;
 		
+		// Punto Flotante
+		float diametro = 34.25f;
+		double precio = 1234.2233404958487844;
+		
+		//Texto
+		char genero = 'M';
+		
+		 //Logico
+		boolean isVisible = true;
+		
 	}
 }

@@ -28,4 +28,11 @@
 	short: -32768 a 32767 - 2 bytes
 	int: -2147483648 a 2147483648 -4 bytes
 	long: 8 bytes
+	°Decimales
+	float - 4 bytes
+	double - 8 bytes
+	°Texto
+	char - 2 bytes
+	°Logivos
+	boolean - 2 bytes
 
