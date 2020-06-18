@@ -8,3 +8,12 @@
 -Hatsa el 2009 Java fue propiedad de SunMicroSystems
 -En 2009 Oracle compró Java.
 
+-JDK : Java Development Kit
+-JRE : Java Runtime Enviroment
+
+°Verificación de Java de Java
+-Abrir la consola del sistema operativo.
+-Verificar Java con el comando java -version, si no funciona, se deberá instalar Java
+-Verifivar el compilador con javac , si no funciona se deben configurar variables del entorno.
+
+
