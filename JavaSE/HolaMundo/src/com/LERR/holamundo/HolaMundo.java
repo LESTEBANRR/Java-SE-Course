@@ -20,5 +20,9 @@ public class HolaMundo {
 		 //Logico
 		boolean isVisible = true;
 		
+		//Constamtes
+		int VALOR =0;
+		int VALOR_MAXIMO=1;
+		
 	}
 }
