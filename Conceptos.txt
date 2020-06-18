@@ -16,4 +16,8 @@
 -Verificar Java con el comando java -version, si no funciona, se deberá instalar Java
 -Verifivar el compilador con javac , si no funciona se deben configurar variables del entorno.
 
-
+°Cambio de Variables del Entorno
+-Ir a panel de control/sistema, luego configuraciones avanzadas.
+-dar click en configurar variables del entorno.
+-Dar en Editar.
+-Dar en Nuevo y pegar la ruta del JDK (C:\Program Files\Java\jdk-14.0.1\bin)
