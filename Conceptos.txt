@@ -1,0 +1,8 @@
+°JAVA
+-Es un lenguaje de alto nivel.
+-Es un lenguaje Multiplataforma (Se puede correr en cualquier sistema operativo)
+-Es distribuido, es decir , trabaja con muchos protocolos
+-Es Multihilo, es decir, Puede trabajar en paralelo.
+
+-Java fue creado en 1991 por James Gosling
+
