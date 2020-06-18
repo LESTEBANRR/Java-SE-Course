@@ -36,3 +36,6 @@
 	°Logivos
 	boolean - 2 bytes
 
+-Las variables constantes se escriben en mayusculas
+-Los nombres de las clase siempre empiezan con minusculas
+
