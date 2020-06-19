@@ -101,3 +101,6 @@ public class ForEachAninado {
 -Los nombres de los objetos y sus atributos por lo general son sustantivos.
 -Tienen operaciones que por lo general suelen ser verbos o sustantivos y verbos.
 
+°Clase
+-Una clase es la forma en c´´omo defines tu objeto para generar más objetos.
+-Las Clases se pueden comportar como plantillas.
