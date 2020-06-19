@@ -1,114 +1,66 @@
 package com.LERR.amazonviewer;
-import java.util.Scanner;
 
-import javax.swing.plaf.synth.Region;
+import com.LERR.amazonviewer.model.Movie;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub		
-		Scanner sc=new Scanner(System.in);
-		int exit=0;
+		// TODO Auto-generated method stub
+		
+		Movie movie = new Movie();
+		movie.title = "Coco";
+		movie.duration = 120;
+		
+		int exit = 0;
 		do {
-			int op=0;int op2=0;
-			System.out.println("-------------Welcome to Amazon Viewer-------------");
+			
+			System.out.println("BIENVENIDOS AMAZON VIEWER");
 			System.out.println("");
-			System.out.println("Choose the number of the option that you want:");
+			System.out.println("Selecciona el nÃºmero de la opciÃ³n deseada");
 			System.out.println("1. Movies");
 			System.out.println("2. Series");
 			System.out.println("3. Books");
 			System.out.println("4. Magazines");
-			System.out.println("5. Exit");			
+			System.out.println("0. Exit");
+			
 			//Leer la respuesta del usuario
-			op=sc.nextInt();
-			switch(op) {
-			case 1: // Si selecciona Movies
-				//Limpiar Consola
-				/*
-				try {new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-		        } catch (Exception e) {//No hacer nada }
-		        */			
-				do {
-					System.out.println("----------Movies---------");
-					System.out.println("*Select the option that you want:");
-					System.out.println("1. Exit");
-					op2=sc.nextInt();
-					switch(op2) {
-						case 1:
-							op=0;
-							break;
-						default:
-							//Limpiar Consola
-							/*
-							try {new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-					        } catch (Exception e) {//No hacer nada }
-					        */			
-							System.out.println("Esa opción no es valida");op2=0;
-							break;
-					}
-				}while(op==1);
-				System.out.println("Salio de Movies");
-				break;
-			case 2:
-				do {
-					System.out.println("----------Series---------");
-					System.out.println("*Select the option that you want:");
-					System.out.println("1. Exit");
-					op2=sc.nextInt();
-					switch(op2) {
-						case 1:
-							op=0;
-							break;
-						default:
-							System.out.println("Esa opción no es valida");op2=0;
-							break;
-					}
-				}while(op==1);
-				System.out.println("Salio de Series");
-				break;
-			case 3:
-				do {
-					System.out.println("----------Books---------");
-					System.out.println("*Select the option that you want:");
-					System.out.println("1. Exit");
-					op2=sc.nextInt();
-					switch(op2) {
-						case 1:
-							op=0;
-							break;
-						default:
-							System.out.println("Esa opción no es valida");op2=0;
-							break;
-					}
-				}while(op==1);
-				System.out.println("Salio de Books");
-				break;
-			case 4:
-				do {
-					System.out.println("----------Magazines---------");
-					System.out.println("*Select the option that you want:");
-					System.out.println("1. Exit");
-					op2=sc.nextInt();
-					switch(op2) {
-						case 1:
-							op=0;
-							break;
-						default:
-							System.out.println("Esa opción no es valida");op2=0;
-							break;
-					}
-				}while(op==1);
-				System.out.println("Salio de magazines");
-				break;
-			case 5:
-				exit =1;
-				System.out.println("Salio de Amazon Viewer");
-				break;
-			default: 
-				System.out.println("Esa opción no existe");
-				break;
+			int response = 0;
+			switch (response) {
+				case 0:
+					//salir
+					
+					break;
+				case 1:
+					
+					break;
+				case 2:
+					
+					break;
+				case 3:
+					
+					break;
+				case 4:
+					
+					break;
+				case 5:
+					
+					break;
+				case 6:
+					
+					break;
+	
+				default:
+					System.out.println();
+					System.out.println("....Â¡Â¡Selecciona una opciÃ³n!!....");
+					System.out.println();
+					break;
 			}
-			//
-		}while(exit == 0);
+			
+			
+		}while(exit != 0);
+		
+		
+
 	}
 
 }
