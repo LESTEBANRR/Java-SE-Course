@@ -21,3 +21,24 @@
 -dar click en configurar variables del entorno.
 -Dar en Editar.
 -Dar en Nuevo y pegar la ruta del JDK (C:\Program Files\Java\jdk-14.0.1\bin)
+
+°Tipos de Datos Primitivos
+	°Enteros
+	byte: -128 a 127 - 1 byte
+	short: -32768 a 32767 - 2 bytes
+	int: -2147483648 a 2147483648 -4 bytes
+	long: 8 bytes
+	°Decimales
+	float - 4 bytes
+	double - 8 bytes
+	°Texto
+	char - 2 bytes
+	°Logivos
+	boolean - 2 bytes
+
+-Las variables constantes se escriben en mayusculas
+-Los nombres de las clase siempre empiezan con minusculas
+-Para hacer Cast (Convertir de una variable a otra) se usa la siguiente sintaxis #tipoNuevo #nombreNuevo = (#tipoNuevo) #variableAconvertir ;
+-Para hacer un arreglo se usa la sintaxis #TipoDato[] #nombre; o #TipoDato #nombre[]
+-Para denifir el tamaño de un arreglo es (una vez crado) #nombre=new #TipoDato[#capacidad];
+
