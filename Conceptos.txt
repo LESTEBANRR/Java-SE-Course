@@ -40,5 +40,29 @@
 -Los nombres de las clase siempre empiezan con minusculas
 -Para hacer Cast (Convertir de una variable a otra) se usa la siguiente sintaxis #tipoNuevo #nombreNuevo = (#tipoNuevo) #variableAconvertir ;
 -Para hacer un arreglo se usa la sintaxis #TipoDato[] #nombre; o #TipoDato #nombre[]
--Para denifir el tamaño de un arreglo es (una vez crado) #nombre=new #TipoDato[#capacidad];
+-Para denifir el tamaño de un arreglo es (una vez creado) #nombre=new #TipoDato[#capacidad];
+
+°Operadores
+	°Aritmetico
+	+ , - , * , / , %
+	°De asignación
+	Operador | Aplicación | Desglose |
+	  +=	 | a += b     | a = a + b|
+	  -=	 | a -= b     | a = a - b|
+	  *=	 | a *= b     | a = a * b|
+	  /=	 | a /= b     | a = a / b|
+	  %=	 | a %= b     | a = a % b|
+	°Incremento / Decremento
+		++	--
+	°Operadores equidad
+	 	==	!=
+	°OPeradores de Relación
+	<	-	menor que
+	>	-	mayor que
+	<=	-	menor igual que
+	>=	-	mayor igual que
+	°Operadores Lógicos
+	&&	AND
+	||	OR	
+	!	NOT
 

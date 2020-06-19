@@ -3,6 +3,7 @@ package com.LERR.holamundo;
 public class HolaMundo {
 
 	public static void main(String[] args) {
+		//System.out.println("Hola Mundo");
 		
 		// Tipos de Datos Enteros
 		byte edad = 127;
@@ -42,14 +43,63 @@ public class HolaMundo {
 		names[2]='l';
 		names[3]='a';
 		//Obtención de Valores
+		/*
 		System.out.print(names[0]);
 		System.out.print(names[1]);
 		System.out.print(names[2]);
 		System.out.println(names[3]);		
-		
+		*/
 		char[][][][] monkey=new char[2][3][2][2];
 		monkey[1][0][0][1]='m';
-		System.out.println(monkey[1][0][0][1]);
-		//System.out.println("Hola Mundo");
+		//System.out.println(monkey[1][0][0][1]);
+		
+		//Operadores Aritméticos
+		int a=1;
+		int aa=a+a;
+		//System.out.println("El valor de aa es: "+aa);
+		double x=2.56;
+		int y =9;
+		float w=(float)x+y;
+		//System.out.println(w);
+		
+		//System.out.println(w*2);
+		double k=4/0.002;
+		//System.out.println(k);		
+		//System.out.println(7%2);
+		
+		//Operadores de Asignación
+		double f =2;
+		int g=3;
+		f /=g;
+		//System.out.println(f);
+		
+		//Operadores de Incremento/Decremento
+		int l=3;
+		l++;
+		++l;
+		//System.out.println(l);
+		
+		//Operadores de Equidad
+		int q=5;
+		int p=4;
+		//System.out.println(q==p);
+		//System.out.println(q!=p);
+		
+		//Operadores de Relación
+		System.out.println("q < p ->"+(q < p));
+		System.out.println("q > p ->"+(q > p));
+		
+		System.out.println("q <= p ->"+(q <= p));
+		System.out.println("q >= p ->"+(q >= p));
+		
+		//Operadores Lógicos
+		boolean n=false;
+		boolean m=true;
+		
+		System.out.println("n && m ->"+(n&&m));
+		System.out.println("n || m ->"+(n||m));
+		
+		System.out.println("!n ->"+!n);
+		System.out.println("!m ->"+!m);
 	}
 }
