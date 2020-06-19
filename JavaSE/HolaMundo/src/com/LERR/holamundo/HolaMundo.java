@@ -3,7 +3,7 @@ package com.LERR.holamundo;
 public class HolaMundo {
 
 	public static void main(String[] args) {
-		System.out.println("Hola Mundo");
+		
 		// Tipos de Datos Enteros
 		byte edad = 127;
 		short year = -32768;
@@ -34,5 +34,20 @@ public class HolaMundo {
 		int [][][][] array4D=new int[1][2][3][4];
 		
 		char [][] days = {{'M','T','W'} , {'M','T','W'} };
+		
+		char[] names =new char [4];
+		names[0]='h';
+		names[1]='o';
+		names[2]='l';
+		names[3]='a';
+		System.out.print(names[0]);
+		System.out.print(names[1]);
+		System.out.print(names[2]);
+		System.out.println(names[3]);		
+		
+		char[][][][] monkey=new char[2][3][2][2];
+		monkey[1][0][0][1]='m';
+		System.out.println(monkey[1][0][0][1]);
+		//System.out.println("Hola Mundo");
 	}
 }
