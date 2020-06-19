@@ -80,7 +80,24 @@ public class HolaMundo {
 		//Operadores de Equidad
 		int q=5;
 		int p=4;
-		System.out.println(q==p);
-		System.out.println(q!=p);
+		//System.out.println(q==p);
+		//System.out.println(q!=p);
+		
+		//Operadores de Relación
+		System.out.println("q < p ->"+(q < p));
+		System.out.println("q > p ->"+(q > p));
+		
+		System.out.println("q <= p ->"+(q <= p));
+		System.out.println("q >= p ->"+(q >= p));
+		
+		//Operadores Lógicos
+		boolean n=false;
+		boolean m=true;
+		
+		System.out.println("n && m ->"+(n&&m));
+		System.out.println("n || m ->"+(n||m));
+		
+		System.out.println("!n ->"+!n);
+		System.out.println("!m ->"+!m);
 	}
 }

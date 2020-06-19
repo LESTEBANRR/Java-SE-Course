@@ -54,6 +54,15 @@
 	  %=	 | a %= b     | a = a % b|
 	°Incremento / Decremento
 		++	--
-	°Operador equidad
+	°Operadores equidad
 	 	==	!=
-	
+	°OPeradores de Relación
+	<	-	menor que
+	>	-	mayor que
+	<=	-	menor igual que
+	>=	-	mayor igual que
+	°Operadores Lógicos
+	&&	AND
+	||	OR	
+	!	NOT
+
