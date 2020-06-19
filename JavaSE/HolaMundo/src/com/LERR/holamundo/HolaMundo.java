@@ -157,6 +157,12 @@ public class HolaMundo {
 				System.out.println("Ese Mes no existe");
 				break;
 		}
-		
+		//------While---------
+		int e = 1;
+		while (e <=5) {
+			System.out.println("e igual a "+e);
+			e++;
+		}
+		System.out.println("Continuamos con el flujo");
 	}
 }
