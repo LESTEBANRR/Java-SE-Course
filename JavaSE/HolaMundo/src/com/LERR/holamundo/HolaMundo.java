@@ -173,6 +173,10 @@ public class HolaMundo {
 			numeros[c]=c;
 			System.out.println("Array numeros["+c+"]="+numeros[c]);
 		}
+		//-----ForEach------
+		for (int i : numeros) {
+			System.out.println(i);
+		}
 		System.out.println("Continuamos con el flujo");
 		
 	}

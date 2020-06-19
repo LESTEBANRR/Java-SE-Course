@@ -66,3 +66,7 @@
 	||	OR	
 	!	NOT
 
+°Palabras Reservadas para terminar procesos
+• break: Nos permite romper o interrumpir un proceso, es usado en los ciclos para finalizarlos de forma rápida o en los case para que el programa pueda continuar.
+• continue: Este genera un salto al siguiente proceso en las líneas de código.
+• return: Regresa un valor y finaliza el proceso donde se ejecuta.
