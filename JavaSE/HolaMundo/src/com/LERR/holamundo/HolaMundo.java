@@ -54,21 +54,33 @@ public class HolaMundo {
 		//Operadores Aritméticos
 		int a=1;
 		int aa=a+a;
-		System.out.println("El valor de aa es: "+aa);
+		//System.out.println("El valor de aa es: "+aa);
 		double x=2.56;
 		int y =9;
 		float w=(float)x+y;
-		System.out.println(w);
+		//System.out.println(w);
 		
-		System.out.println(w*2);
+		//System.out.println(w*2);
 		double k=4/0.002;
-		System.out.println(k);		
-		System.out.println(7%2);
+		//System.out.println(k);		
+		//System.out.println(7%2);
 		
 		//Operadores de Asignación
 		double f =2;
 		int g=3;
 		f /=g;
-		System.out.println(f);
+		//System.out.println(f);
+		
+		//Operadores de Incremento/Decremento
+		int l=3;
+		l++;
+		++l;
+		//System.out.println(l);
+		
+		//Operadores de Equidad
+		int q=5;
+		int p=4;
+		System.out.println(q==p);
+		System.out.println(q!=p);
 	}
 }
