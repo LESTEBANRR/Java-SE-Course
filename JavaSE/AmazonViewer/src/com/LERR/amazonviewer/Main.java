@@ -1,5 +1,7 @@
 package com.LERR.amazonviewer;
 import java.util.Scanner;
+
+import javax.swing.plaf.synth.Region;
 public class Main {
 
 	public static void main(String[] args) {
@@ -15,7 +17,7 @@ public class Main {
 			System.out.println("2. Series");
 			System.out.println("3. Books");
 			System.out.println("4. Magazines");
-			System.out.println("5. Exit");
+			System.out.println("5. Exit");			
 			//Leer la respuesta del usuario
 			op=sc.nextInt();
 			switch(op) {
@@ -35,6 +37,11 @@ public class Main {
 							op=0;
 							break;
 						default:
+							//Limpiar Consola
+							/*
+							try {new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+					        } catch (Exception e) {//No hacer nada }
+					        */			
 							System.out.println("Esa opción no es valida");op2=0;
 							break;
 					}

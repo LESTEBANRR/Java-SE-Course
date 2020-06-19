@@ -95,3 +95,9 @@ public class ForEachAninado {
     }
 
 }
+
+°Programación Orientada a Objetod (POO)
+-Un objeto tiene atributos (caracteristicas)
+-Los nombres de los objetos y sus atributos por lo general son sustantivos.
+-Tienen operaciones que por lo general suelen ser verbos o sustantivos y verbos.
+
