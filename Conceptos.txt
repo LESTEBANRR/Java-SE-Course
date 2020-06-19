@@ -43,24 +43,30 @@
 -Para denifir el tamaño de un arreglo es (una vez creado) #nombre=new #TipoDato[#capacidad];
 
 °Operadores
+
 	°Aritmetico
 	+ , - , * , / , %
+
 	°De asignación
-	Operador | Aplicación | Desglose |
-	  +=	 | a += b     | a = a + b|
-	  -=	 | a -= b     | a = a - b|
-	  *=	 | a *= b     | a = a * b|
-	  /=	 | a /= b     | a = a / b|
-	  %=	 | a %= b     | a = a % b|
+	|Operador | Aplicación | Desglose |
+	|  +=	  | a += b     | a = a + b|
+	|  -=	  | a -= b     | a = a - b|
+	|  *=	  | a *= b     | a = a * b|
+	|  /=	  | a /= b     | a = a / b|
+	|  %=	  | a %= b     | a = a % b|
+
 	°Incremento / Decremento
 		++	--
+
 	°Operadores equidad
 	 	==	!=
+
 	°OPeradores de Relación
 	<	-	menor que
 	>	-	mayor que
 	<=	-	menor igual que
 	>=	-	mayor igual que
+
 	°Operadores Lógicos
 	&&	AND
 	||	OR	
