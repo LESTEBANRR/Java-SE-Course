@@ -86,20 +86,109 @@ public class HolaMundo {
 		//System.out.println(q!=p);
 		
 		//Operadores de Relación
+		/*
 		System.out.println("q < p ->"+(q < p));
 		System.out.println("q > p ->"+(q > p));
 		
 		System.out.println("q <= p ->"+(q <= p));
 		System.out.println("q >= p ->"+(q >= p));
-		
+		*/
 		//Operadores Lógicos
 		boolean n=false;
 		boolean m=true;
 		
+		/*
 		System.out.println("n && m ->"+(n&&m));
 		System.out.println("n || m ->"+(n||m));
 		
 		System.out.println("!n ->"+!n);
 		System.out.println("!m ->"+!m);
+		*/
+		
+		//--------------Control de Flujo-----------------------------
+		//-----IF ELSE--------------
+		/*
+		if (q>p) {
+		System.out.println("q es mayor que p");
+		}else if (q==p) {
+			System.out.println("q y p son iguales");
+		}else {
+			System.out.println("q es menor que p");
+		}*/
+		//-----Switch--------------
+		int mes =8;
+		/*switch (mes) {
+			case 1:
+				System.out.println("Enero");
+				break;
+			case 2:
+				System.out.println("Febrero");
+				break;
+			case 3:
+				System.out.println("Marzo");
+				break;
+			case 4:
+				System.out.println("Abril");
+				break;
+			case 5:
+				System.out.println("Mayo");
+				break;
+			case 6:
+				System.out.println("Junio");
+				break;
+			case 7:
+				System.out.println("Julio");
+				break;
+			case 8:
+				System.out.println("Agosto");
+				break;
+			case 9:
+				System.out.println("Septiembre");
+				break;
+			case 10:
+				System.out.println("Octubre");
+				break;
+			case 11:
+				System.out.println("Noviembre");
+				break;
+			case 12:
+				System.out.println("Diciembre");
+				break;
+			default:
+				System.out.println("Ese Mes no existe");
+				break;
+		}*/
+		//------While---------
+		int e = 1;
+		/*
+		while (e <=5) {
+			System.out.println("e igual a "+e);
+			e++;
+		}
+		
+		*/
+		//-----For------------
+		int numeros[]= new int[5];
+		for (int c=0;c<5;c++) {
+			numeros[c]=c;
+			System.out.println("Array numeros["+c+"]="+numeros[c]);
+		}
+		//-----ForEach------
+		for (int i : numeros) {
+			System.out.println(i);
+		}
+		System.out.println("Continuamos con el flujo");					 
+		 
+		//FORAECH ANIDADO
+		        //Definimos un array de 3 filas x 5 columnas
+		        int array[][]={{1,2,3,4,5}, {6,7,8,9,10}, {11,12,13,14,15}};
+		 
+		        //Recorremos el array multidimensional
+		        for (int[] arrayInterno : array){
+		            for(int numero: arrayInterno){
+		                System.out.println(numero);
+		            }
+		        }
+	
 	}
 }
