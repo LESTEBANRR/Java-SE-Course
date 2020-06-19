@@ -165,9 +165,15 @@ public class HolaMundo {
 			System.out.println("e igual a "+e);
 			e++;
 		}
-		System.out.println("Continuamos con el flujo");
+		
 		*/
 		//-----For------------
-
+		int numeros[]= new int[5];
+		for (int c=0;c<5;c++) {
+			numeros[c]=c;
+			System.out.println("Array numeros["+c+"]="+numeros[c]);
+		}
+		System.out.println("Continuamos con el flujo");
+		
 	}
 }
