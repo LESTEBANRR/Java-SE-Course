@@ -24,5 +24,15 @@ public class HolaMundo {
 		int VALOR =0;
 		int VALOR_MAXIMO=1;
 		
+		//Arrays
+		//Declaración
+		int[] arregloInt = new int[3];
+		double arregloIdouble[];
+		
+		int[][] array2D=new int[2][3];
+		int[][][] array3D=new int[3][3][2];
+		int [][][][] array4D=new int[1][2][3][4];
+		
+		char [][] days = {{'M','T','W'} , {'M','T','W'} };
 	}
 }
