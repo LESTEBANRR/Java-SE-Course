@@ -6,17 +6,17 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		Movie movie = new Movie();
-		movie.title = "Coco";
-		movie.duration = 120;
-		
+		showMenu();
+
+	}
+	
+	public static void showMenu() {
 		int exit = 0;
 		do {
 			
 			System.out.println("BIENVENIDOS AMAZON VIEWER");
 			System.out.println("");
-			System.out.println("Selecciona el nÃºmero de la opciÃ³n deseada");
+			System.out.println("Selecciona el número de la opción deseada");
 			System.out.println("1. Movies");
 			System.out.println("2. Series");
 			System.out.println("3. Books");
@@ -24,14 +24,14 @@ public class Main {
 			System.out.println("0. Exit");
 			
 			//Leer la respuesta del usuario
-			int response = 0;
+			int response = 1;
 			switch (response) {
 				case 0:
 					//salir
 					
 					break;
 				case 1:
-					
+					showMovies();
 					break;
 				case 2:
 					
@@ -51,16 +51,59 @@ public class Main {
 	
 				default:
 					System.out.println();
-					System.out.println("....Â¡Â¡Selecciona una opciÃ³n!!....");
+					System.out.println("....¡¡Selecciona una opción!!....");
 					System.out.println();
 					break;
 			}
 			
 			
 		}while(exit != 0);
-		
-		
-
 	}
-
+	
+	public static void showMovies() {
+		int exit = 0;
+		do {
+			System.out.println();
+			System.out.println(":: MOVIES ::");
+			System.out.println();
+		}while(exit !=0);
+		
+	}
+	
+	public static void showSeries() {
+		int exit = 0;
+		do {
+			System.out.println();
+			System.out.println(":: SERIES ::");
+			System.out.println();
+		}while(exit !=0);
+	}
+	
+	public static void showChapters() {
+		int exit = 0;
+		do {
+			System.out.println();
+			System.out.println(":: CHAPTERS ::");
+			System.out.println();
+		}while(exit !=0);
+	}
+	
+	public static void showBooks() {
+		int exit = 0;
+		do {
+			System.out.println();
+			System.out.println(":: BOOKS ::");
+			System.out.println();
+		}while(exit !=0);
+	}
+	
+	public static void showMagazines() {
+		int exit = 0;
+		do {
+			System.out.println();
+			System.out.println(":: MAGAZINES ::");
+			System.out.println();
+		}while(exit !=0);
+	}
+	
 }
