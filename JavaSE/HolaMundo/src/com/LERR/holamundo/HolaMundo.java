@@ -107,16 +107,17 @@ public class HolaMundo {
 		
 		//--------------Control de Flujo-----------------------------
 		//-----IF ELSE--------------
+		/*
 		if (q>p) {
 		System.out.println("q es mayor que p");
 		}else if (q==p) {
 			System.out.println("q y p son iguales");
 		}else {
 			System.out.println("q es menor que p");
-		}
+		}*/
 		//-----Switch--------------
 		int mes =8;
-		switch (mes) {
+		/*switch (mes) {
 			case 1:
 				System.out.println("Enero");
 				break;
@@ -156,7 +157,17 @@ public class HolaMundo {
 			default:
 				System.out.println("Ese Mes no existe");
 				break;
+		}*/
+		//------While---------
+		int e = 1;
+		/*
+		while (e <=5) {
+			System.out.println("e igual a "+e);
+			e++;
 		}
+		System.out.println("Continuamos con el flujo");
+		*/
+		//-----For------------
 		
 	}
 }
