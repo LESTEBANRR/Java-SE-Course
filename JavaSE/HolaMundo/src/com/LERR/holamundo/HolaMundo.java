@@ -33,6 +33,7 @@ public class HolaMundo {
 		int[][][] array3D=new int[3][3][2];
 		int [][][][] array4D=new int[1][2][3][4];
 		
+		//Asignación de Valores
 		char [][] days = {{'M','T','W'} , {'M','T','W'} };
 		
 		char[] names =new char [4];
@@ -40,6 +41,7 @@ public class HolaMundo {
 		names[1]='o';
 		names[2]='l';
 		names[3]='a';
+		//Obtención de Valores
 		System.out.print(names[0]);
 		System.out.print(names[1]);
 		System.out.print(names[2]);
