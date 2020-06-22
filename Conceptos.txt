@@ -161,4 +161,8 @@ Cuando se esconde un dato, ya sea metodo o variable.
 
 °super: indica que una variable o método es de la clase padre (superclase).
 °this: permite especificar que la variable que está señalando es de la misma clase en la que se usa.
+°\n - Salto de línea.
+°\t - Tabulación.
+°Sobreescritura: Cuando una clase hereda de otra, yen esta clase hija se redifine un método con una implementación distinta a la de la clase padre. Los métodos marcados como final o static no se pueden sobreescribir.
+°Polimorfismo: Posibilidad de construir varios métodos con el mismo nombre, pero con relación a la clase que pertenece cada uno, con comportamientos diferentes.
 

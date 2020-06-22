@@ -8,9 +8,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Movie movie =new Movie("Coco", "Animation", (short)2017);
-		showMenu();
-
+		Movie movie=new Movie("Coco", "Animación", "Pixar",120, (short)2017);
+		System.out.println(movie);
 	}
 	
 	public static void showMenu() {
