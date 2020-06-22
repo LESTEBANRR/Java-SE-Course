@@ -165,4 +165,5 @@ Cuando se esconde un dato, ya sea metodo o variable.
 °\t - Tabulación.
 °Sobreescritura: Cuando una clase hereda de otra, yen esta clase hija se redifine un método con una implementación distinta a la de la clase padre. Los métodos marcados como final o static no se pueden sobreescribir.
 °Polimorfismo: Posibilidad de construir varios métodos con el mismo nombre, pero con relación a la clase que pertenece cada uno, con comportamientos diferentes.
+°Interfaces: Es un tipo de referencia similar a una clase que podría contener solo constantes,definiciones de métodos, métodos con modificador de accesi default.
 
