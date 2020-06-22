@@ -148,4 +148,5 @@ Cosas que debes saber:
 Por default siempre se importa java.lang.*
 No necesitas importar las clases que estén en el mismo paquete.
 
-
+°Sobrecarga
+La sobre carga ocurre cuando se tienen varios métodos con el mismo nombre pero con diferentes argumentos o resultados.
