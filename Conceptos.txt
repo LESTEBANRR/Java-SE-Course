@@ -167,3 +167,18 @@ Cuando se esconde un dato, ya sea metodo o variable.
 °Polimorfismo: Posibilidad de construir varios métodos con el mismo nombre, pero con relación a la clase que pertenece cada uno, con comportamientos diferentes.
 °Interfaces: Es un tipo de referencia similar a una clase que podría contener solo constantes,definiciones de métodos, métodos con modificador de accesi default. Para implementarse una interfaz se utiliza la palabra implements
 
+°Colecciones de Datos:
+Se diferencian de los array en que su tamaño no es fijo, son dinámicos.Se pueden realizar operaciones de añadir, eliminar, obtener, encontrar o recorrer una colección.
+	°List: Es una interfaz que se utiliza para almacenar una serie de objetos, proviene del paquete java.util.
+	-add(Object o) : Añade un objeto al final de la Lista.
+	-add(int indice, Object o) : Añade un objeto a la lista en la posición indicada.
+	-get (int indice) : devuelve el objeto de la lista de la posición indicada.
+	-remove (int indice) : remueve un objeto en el indice indicado.
+	-clear(): Elimina todos los elementos de una lista.
+	-indexOf(Object o): devuelve la posición de la primera vez que un elemento coincida con el objeto pasado por parámetro. Si el elemento no se encuentra devuelve -1.
+	-lastIndexOf(Object o) : Devuelve la posición de la ultima vez que un elemento coincida con el parametro.
+	-size() : devuelve el número de elementos de la lista.
+	-contains(Object o) : Devuelve true si el objeto se encuentra en la lista.
+
+	°ArrayList : Almacena un arreglo de objetos que puede cambiar de tamaño, su capacidad crece automaticamente. ArrayList<String> androids = new ArrayList<String>();
+	°Vector : Se diferencia de ArrayList en que un vector usa hilos y está sincronizado y un array no.

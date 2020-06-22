@@ -1,10 +1,12 @@
 package com.LERR.amazonviewer.model;
 
+import java.util.ArrayList;
+
 public class Serie  extends Film{
 
 	private int id;
 	private int sessionQuantity;
-	private Chapter[] chapters;
+	private ArrayList<Chapter> chapters;
 	//chapters[]
 
 	public Serie(String title, String genre, String creator, int duration,int sessionQuantity) {
@@ -22,10 +24,10 @@ public class Serie  extends Film{
 	public void setSessionQuantity(int sessionQuantity) {
 		this.sessionQuantity = sessionQuantity;
 	}
-	public Chapter[] getChapters() {
+	public ArrayList<Chapter> getChapters() {
 		return chapters;
 	}
-	public void setChapters(Chapter[] chapters) {
+	public void setChapters(ArrayList<Chapter> chapters) {
 		this.chapters = chapters;
 	}
 	
