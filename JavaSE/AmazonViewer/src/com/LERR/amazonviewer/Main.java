@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
+import com.LERR.amazonviewer.model.Book;
 import com.LERR.amazonviewer.model.Chapter;
 import com.LERR.amazonviewer.model.Movie;
 import com.LERR.amazonviewer.model.Serie;
@@ -13,6 +14,8 @@ import com.LERR.makereport.Report;
 public class Main {
 
 	public static ArrayList<Movie> movies = Movie.makeMoviesList();
+	public static ArrayList<Serie> series = Serie.makeSeriesList();
+	public static ArrayList<Book> books = Book.makeBooksList();
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -121,8 +124,7 @@ public class Main {
 	}
 	
 	public static void showSeries() {
-		int exit = 1;
-		ArrayList<Serie> series = Serie.makeSeriesList();
+		int exit = 1;		
 		do {
 			System.out.println();
 			System.out.println(":: SERIES ::");
@@ -142,8 +144,9 @@ public class Main {
 			if(response == 0) {
 				showMenu();
 			}
-			
-			showChapters(series.get(response-1).getChapters());
+			if(response >0) {
+				showChapters(series.get(response-1).getChapters());
+			}
 			
 		}while(exit !=0);
 	}
@@ -189,11 +192,45 @@ public class Main {
 	}
 	
 	public static void showBooks() {
-		int exit = 0;
+		int exit = 1;
 		do {
 			System.out.println();
 			System.out.println(":: BOOKS ::");
 			System.out.println();
+			
+			for (int i = 0; i < books.size(); i++) { 
+				System.out.println(i+1 + ". " + books.get(i).getTitle() + " Leído: " + books.get(i).isReaded());
+			}
+			
+			System.out.println("0. Regresar al Menu");
+			System.out.println();
+			
+			//Leer Respuesta usuario
+			Scanner sc = new Scanner(System.in);
+			int response = Integer.valueOf(sc.nextLine());
+			
+			if(response == 0) {
+				exit=0;
+				showMenu();
+			}
+			if(response>0) {
+			
+				Book movieSelected = books.get(response-1);
+				movieSelected.setReaded(true);
+				Date dateI = movieSelected.startToSee(new Date());
+				
+				for (int i = 0; i < 100000; i++) {
+					System.out.println("..........");
+				}
+				
+				//Termine de verla
+				movieSelected.stopToSee(dateI, new Date());
+				System.out.println();
+				System.out.println("Viste: " + movieSelected);
+				System.out.println("Por: " + movieSelected.getTimeReaded() + " milisegundos");
+				
+			}			
+			
 		}while(exit !=0);
 	}
 	
@@ -219,6 +256,19 @@ public class Main {
 				contentReport+="\n"+movie.toString();
 			}
 		}
+		for (Serie serie : series) {
+			String visto="";
+			if(serie.getIsViewed()) {
+				contentReport+="\n"+serie.toString();
+			}
+		}
+		for (Book book : books) {
+			String leido="";
+			if(book.getIsReaded()) {
+				contentReport+="\n"+book.toString();
+			}
+		}
+		
 		report.setContent(contentReport);
 		report.makeReport();
 	}
@@ -238,6 +288,18 @@ public class Main {
 			String visto="";
 			if(movie.getIsViewed()) {
 				contentReport+="\n"+movie.toString();
+			}
+		}
+		for (Serie serie : series) {
+			String visto="";
+			if(serie.getIsViewed()) {
+				contentReport+="\n"+serie.toString();
+			}
+		}
+		for (Book book : books) {
+			String leido="";
+			if(book.getIsReaded()) {
+				contentReport+="\n"+book.toString();
 			}
 		}
 		report.setContent(contentReport);

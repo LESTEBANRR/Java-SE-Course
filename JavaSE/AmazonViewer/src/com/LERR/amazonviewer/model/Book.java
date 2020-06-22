@@ -25,7 +25,16 @@ public class Book extends Publication implements IVisualizable{
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
-	public boolean isReaded() {
+	public String isReaded() {
+		String visto="";
+		if (this.readed==true) {
+			visto="Yes";
+		}else {
+			visto="No";
+		}
+		return visto;
+	}
+	public boolean getIsReaded() {
 		return readed;
 	}
 	public void setReaded(boolean readed) {
@@ -61,5 +70,15 @@ public class Book extends Publication implements IVisualizable{
 			books.add(new Book("Book "+i, new Date(), "Editorial "+i, autor, "ISBN "+i) );
 		}
 		return books;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return  "\n :: BOOK ::" + 
+				"\n Title: " + getTitle() +
+				"\n Editorial: " + getEditorial() + 
+				"\n Isbn: " + getIsbn() + 
+				"\n Edition Date: " + getEditionDate();
 	}
 }
