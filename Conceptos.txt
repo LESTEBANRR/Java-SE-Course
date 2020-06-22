@@ -153,3 +153,6 @@ La sobre carga ocurre cuando se tienen varios métodos con el mismo nombre pero 
 
 °Encapsulamiento
 Cuando se esconde un dato, ya sea metodo o variable.
+
+°Los tipos de datos primitivos se almacenan en el stack.
+°Los objetos de almacenan en el heap
