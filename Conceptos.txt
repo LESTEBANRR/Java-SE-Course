@@ -156,3 +156,6 @@ Cuando se esconde un dato, ya sea metodo o variable.
 
 °Los tipos de datos primitivos se almacenan en el stack.
 °Los objetos de almacenan en el heap
+
+°Herencia: Se heredan atributos de una clase padre a una clase hijo. La idea de la herencia es permitir la creación de nuevas clases basadas en nuevas clases.
+
