@@ -157,7 +157,7 @@ Cuando se esconde un dato, ya sea metodo o variable.
 °Los tipos de datos primitivos se almacenan en el stack.
 °Los objetos de almacenan en el heap
 
-°Herencia: Se heredan atributos de una clase padre a una clase hijo. La idea de la herencia es permitir la creación de nuevas clases basadas en nuevas clases.
+°Herencia: Se heredan atributos de una clase padre a una clase hijo. La idea de la herencia es permitir la creación de nuevas clases basadas en nuevas clases. Para heredar de una clase se utiliza la palabra extends.
 
 °super: indica que una variable o método es de la clase padre (superclase).
 °this: permite especificar que la variable que está señalando es de la misma clase en la que se usa.
@@ -165,5 +165,5 @@ Cuando se esconde un dato, ya sea metodo o variable.
 °\t - Tabulación.
 °Sobreescritura: Cuando una clase hereda de otra, yen esta clase hija se redifine un método con una implementación distinta a la de la clase padre. Los métodos marcados como final o static no se pueden sobreescribir.
 °Polimorfismo: Posibilidad de construir varios métodos con el mismo nombre, pero con relación a la clase que pertenece cada uno, con comportamientos diferentes.
-°Interfaces: Es un tipo de referencia similar a una clase que podría contener solo constantes,definiciones de métodos, métodos con modificador de accesi default.
+°Interfaces: Es un tipo de referencia similar a una clase que podría contener solo constantes,definiciones de métodos, métodos con modificador de accesi default. Para implementarse una interfaz se utiliza la palabra implements
 

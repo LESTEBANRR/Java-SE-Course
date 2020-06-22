@@ -2,7 +2,7 @@ package com.LERR.amazonviewer.model;
 
 import java.util.Date;
 
-public class Book extends Publication{
+public class Book extends Publication implements IVisualizable{
 
 	private int id;	
 	private String isbn;
@@ -35,6 +35,22 @@ public class Book extends Publication{
 	}
 	public void setTimeReaded(int timeReaded) {
 		this.timeReaded = timeReaded;
+	}
+
+	@Override
+	public Date startToSee(Date dateI) {
+		// TODO Auto-generated method stub
+		return dateI;
+	}
+
+	@Override
+	public void stopToSee(Date dateI, Date dateF) {
+		// TODO Auto-generated method stub
+		if(dateF.getSeconds()>dateI.getSeconds()) {
+			setTimeReaded(dateF.getSeconds() - dateI.getSeconds());
+		}else {
+			setTimeReaded(0);
+		}
 	}
 	
 	
