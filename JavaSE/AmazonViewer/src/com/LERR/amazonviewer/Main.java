@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
+import com.LERR.amazonviewer.model.Book;
 import com.LERR.amazonviewer.model.Movie;
 
 public class Main {
@@ -120,12 +121,39 @@ public class Main {
 	}
 	
 	public static void showBooks() {
+		ArrayList<Book> books=Book.makeBooksList();
 		int exit = 0;
 		do {
 			System.out.println();
 			System.out.println(":: BOOKS ::");
 			System.out.println();
+			
+			for (int i = 0; i < books.size(); i++) {
+				System.out.println((i+1)+". "+books.get(i).getTitle()+" Visto: "+books.get(i).isReaded());
+			}
+			System.out.println("0. Return to Menu \n");
+			//Leer Respuesta del Usuario
+			Scanner sc=new Scanner(System.in);
+			int response=Integer.valueOf(sc.nextLine());
+			
+			if (response==0) {
+				exit = 0 ;
+				showMenu();
+			}
+			
+			Book bookSelected=books.get(response-1);
+			bookSelected.setReaded(true);
+			Date dateI=bookSelected.startToSee(new Date());
+			
+			for (int i = 0; i < 100000; i++) {
+				System.out.println("...");
+			}
+			
+			//Termine de verla
+			bookSelected.stopToSee(dateI, new Date());
+			System.out.println("Leíste "+bookSelected.getTitle()+" por "+bookSelected.getTimeReaded()+" milísegundos");
 		}while(exit !=0);
+			
 	}
 	
 	public static void showMagazines() {

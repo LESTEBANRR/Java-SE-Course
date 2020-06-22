@@ -1,5 +1,6 @@
 package com.LERR.amazonviewer.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Book extends Publication implements IVisualizable{
@@ -46,12 +47,19 @@ public class Book extends Publication implements IVisualizable{
 	@Override
 	public void stopToSee(Date dateI, Date dateF) {
 		// TODO Auto-generated method stub
-		if(dateF.getSeconds()>dateI.getSeconds()) {
-			setTimeReaded(dateF.getSeconds() - dateI.getSeconds());
+		if(dateF.getTime()>dateI.getTime()) {
+			setTimeReaded((int)(dateF.getTime() - dateI.getTime()));
 		}else {
 			setTimeReaded(0);
 		}
 	}
 	
-	
+	public static ArrayList<Book> makeBooksList(){
+		ArrayList<Book> books=new ArrayList<Book>();		
+		for (int i = 1; i <6; i++) {
+			String[] autor= { "Autor "+i, "Autor "+(i+1)};
+			books.add(new Book("Book "+i, new Date(), "Editorial "+i, autor, "ISBN "+i) );
+		}
+		return books;
+	}
 }
