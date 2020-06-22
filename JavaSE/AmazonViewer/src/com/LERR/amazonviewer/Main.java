@@ -1,5 +1,6 @@
 package com.LERR.amazonviewer;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
@@ -7,9 +8,12 @@ import java.util.Scanner;
 import com.LERR.amazonviewer.model.Chapter;
 import com.LERR.amazonviewer.model.Movie;
 import com.LERR.amazonviewer.model.Serie;
+import com.LERR.makereport.Report;
 
 public class Main {
 
+	public static ArrayList<Movie> movies = Movie.makeMoviesList();
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -74,7 +78,7 @@ public class Main {
 	
 	public static void showMovies() {
 		int exit = 1;
-		ArrayList<Movie> movies = Movie.makeMoviesList();
+		 
 		do {
 			System.out.println();
 			System.out.println(":: MOVIES ::");
@@ -92,24 +96,26 @@ public class Main {
 			int response = Integer.valueOf(sc.nextLine());
 			
 			if(response == 0) {
+				exit=0;
 				showMenu();
 			}
+			if(response>0) {
 			
-			Movie movieSelected = movies.get(response-1);
-			movieSelected.setViewed(true);
-			Date dateI = movieSelected.startToSee(new Date());
-			
-			for (int i = 0; i < 100000; i++) {
-				System.out.println("..........");
-			}
-			
-			//Termine de verla
-			movieSelected.stopToSee(dateI, new Date());
-			System.out.println();
-			System.out.println("Viste: " + movieSelected);
-			System.out.println("Por: " + movieSelected.getTimeViewed() + " milisegundos");
-			
-			
+				Movie movieSelected = movies.get(response-1);
+				movieSelected.setViewed(true);
+				Date dateI = movieSelected.startToSee(new Date());
+				
+				for (int i = 0; i < 100000; i++) {
+					System.out.println("..........");
+				}
+				
+				//Termine de verla
+				movieSelected.stopToSee(dateI, new Date());
+				System.out.println();
+				System.out.println("Viste: " + movieSelected);
+				System.out.println("Por: " + movieSelected.getTimeViewed() + " milisegundos");
+				
+			}			
 		}while(exit !=0);
 		
 	}
@@ -201,11 +207,41 @@ public class Main {
 	}
 	
 	public static void makeReport() {
+		Report report=new Report();
+		report.setNameFile("Reporte");
+		report.setTitle(":: Vistos ::");
+		report.setExtension("txt");
+		String contentReport=report.getTitle();
 		
+		for (Movie movie : movies) {
+			String visto="";
+			if(movie.getIsViewed()) {
+				contentReport+="\n"+movie.toString();
+			}
+		}
+		report.setContent(contentReport);
+		report.makeReport();
 	}
 	
 	public static void makeReport(Date date) {
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		String dateString=df.format(date);
 		
+		Report report=new Report();
+		report.setNameFile("Reporte "+dateString);
+		
+		report.setTitle(":: Vistos el "+ dateString+" ::");
+		report.setExtension("txt");
+		String contentReport=report.getTitle();
+		
+		for (Movie movie : movies) {
+			String visto="";
+			if(movie.getIsViewed()) {
+				contentReport+="\n"+movie.toString();
+			}
+		}
+		report.setContent(contentReport);
+		report.makeReport();
 	}
 	
 }
