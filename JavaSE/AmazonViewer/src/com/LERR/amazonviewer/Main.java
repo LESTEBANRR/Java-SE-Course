@@ -2,6 +2,7 @@ package com.LERR.amazonviewer;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Scanner;
 
 import com.LERR.amazonviewer.model.Movie;
 
@@ -28,7 +29,8 @@ public class Main {
 			System.out.println("0. Exit");
 			
 			//Leer la respuesta del usuario
-			int response = 1;
+			Scanner sc=new Scanner(System.in);			
+			int response = Integer.valueOf(sc.nextLine());
 			switch (response) {
 				case 0:
 					//salir
@@ -65,7 +67,7 @@ public class Main {
 	}
 	
 	public static void showMovies() {
-		int exit = 0;
+		int exit = 1;
 		ArrayList<Movie> movies = Movie.makeMoviesList();
 		do {
 			System.out.println();
@@ -75,7 +77,26 @@ public class Main {
 				System.out.println((i+1)+". "+movies.get(i).getTitle()+" Visto: "+movies.get(i).isViewed());
 			}
 			System.out.println("0. Return to Menu \n");
+			//Leer Respuesta del Usuario
+			Scanner sc=new Scanner(System.in);
+			int response=Integer.valueOf(sc.nextLine());
 			
+			if (response==0) {
+				exit = 0 ;
+				showMenu();
+			}
+			
+			Movie movieSelected=movies.get(response-1);
+			movieSelected.setViewed(true);
+			Date dateI=movieSelected.startToSee(new Date());
+			
+			for (int i = 0; i < 100000; i++) {
+				System.out.println("...");
+			}
+			
+			//Termine de verla
+			movieSelected.stopToSee(dateI, new Date());
+			System.out.println("Viste "+movieSelected.getTitle()+" por "+movieSelected.getTimeViewed()+" milísegundos");
 		}while(exit !=0);
 		
 	}
