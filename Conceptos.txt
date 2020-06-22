@@ -159,3 +159,6 @@ Cuando se esconde un dato, ya sea metodo o variable.
 
 °Herencia: Se heredan atributos de una clase padre a una clase hijo. La idea de la herencia es permitir la creación de nuevas clases basadas en nuevas clases.
 
+°super: indica que una variable o método es de la clase padre (superclase).
+°this: permite especificar que la variable que está señalando es de la misma clase en la que se usa.
+
