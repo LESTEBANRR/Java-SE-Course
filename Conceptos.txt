@@ -182,3 +182,7 @@ Se diferencian de los array en que su tamaño no es fijo, son dinámicos.Se pued
 
 	°ArrayList : Almacena un arreglo de objetos que puede cambiar de tamaño, su capacidad crece automaticamente. ArrayList<String> androids = new ArrayList<String>();
 	°Vector : Se diferencia de ArrayList en que un vector usa hilos y está sincronizado y un array no.
+	°Clase LinkedList, puede contener elementos duplicados, no está sincronizada (es más rápida) al ser una estructura de datos doblemente ligada podemos añadir datos por encima de la pila o por debajo.
+	°HashSet los elementos se guardan en desorden y gracias al mecanismo llamado hashing (obtiene un identificador del objeto) permite almacenar objetos únicos.
+	°TreeSet almacena objetos únicos, y gracias a su estructura de árbol el acceso es sumamente rápido.
+
