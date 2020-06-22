@@ -1,5 +1,6 @@
 package com.LERR.amazonviewer;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 import com.LERR.amazonviewer.model.Movie;
@@ -8,8 +9,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Movie movie=new Movie("Coco", "Animación", "Pixar",120, (short)2017);
-		System.out.println(movie);
+		showMenu();
 	}
 	
 	public static void showMenu() {
@@ -66,10 +66,16 @@ public class Main {
 	
 	public static void showMovies() {
 		int exit = 0;
+		ArrayList<Movie> movies = Movie.makeMoviesList();
 		do {
 			System.out.println();
 			System.out.println(":: MOVIES ::");
 			System.out.println();
+			for (int i = 0; i < movies.size(); i++) {
+				System.out.println((i+1)+". "+movies.get(i).getTitle()+" Visto: "+movies.get(i).isViewed());
+			}
+			System.out.println("0. Return to Menu \n");
+			
 		}while(exit !=0);
 		
 	}
