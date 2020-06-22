@@ -4,13 +4,21 @@ import java.util.Date;
 
 public class Book {
 
-	int id;
-	String title;
-	Date  editionDate;
-	String editorial;
-	String[] autors;
-	String isbn;
-	boolean readed;
-	int timeReaded;
+	private int id;
+	private String title;
+	private Date  editionDate;
+	private String editorial;
+	private String[] autors;
+	private String isbn;
+	private boolean readed;
+	private int timeReaded;
+	public Book(String title, Date editionDate, String editorial, String isbn) {
+		super();
+		this.title = title;
+		this.editionDate = editionDate;
+		this.editorial = editorial;
+		this.isbn = isbn;
+	}
+	
 	
 }

@@ -2,14 +2,14 @@ package com.LERR.amazonviewer.model;
 
 public class Movie {
 
-	public int id;
-	public String title;
-	public String genre;
-	public String creator;
-	public int duration;
-	public short year;
-	public boolean viewed;
-	public int timeViewed;
+	private int id;
+	private String title;
+	private String genre;
+	private String creator;
+	private int duration;
+	private short year;
+	private boolean viewed;
+	private int timeViewed;
 	
 	
 	public Movie(int id, String title, String genre, String creator, int duration, short year) {
